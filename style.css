@@ -1,110 +1,107 @@
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #e8eaf6;
-        ;
-        font-family: 'Lora', serif;
-    }
-    
-    nav {
-        text-align: right;
-        background-color: purple;
-        font-family: 'Lora', serif;
-        display: inline;
-    }
-    
-    ul {
-        list-style: none;
-        display: inline;
-        padding: 0;
-        margin: 0;
-        font-size: 1.7rem;
-    }
-    
-    li {
-        display: inline;
-        text-align: right;
-        padding-right: 2%;
-    }
-    
-    a {
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-    }
-    
-    #card {
-        border: 3px dashed purple;
-        border-radius: 5px;
-        display: grid;
-        grid-template-rows: 1fr 4fr;
-        box-shadow: 2px 2px 6px grey;
-        box-shadow: -6px -7px 6px white;
-    }
-    
-    #heading {
-        font-family: 'Fredericka the Great', cursive;
-        font-size: 2.3rem;
-        text-align: center;
-        color: black;
-        background-image: url("head.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        padding: 5% 2%;
-        /*background-image: linear-gradient(255, 34, 72);*/
-    }
-    
-    .navigation {
-        background-color: rgb(255, 255, 255);
-        position: fixed;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-        margin: 0;
-    }
-    
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8eaf6;
+    font-family: 'Lora', serif;
+}
+
+nav {
+    text-align: right;
+    font-family: 'Lora', serif;
+    display: inline;
+}
+
+ul {
+    list-style: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+li {
+    display: inline;
+    text-align: right;
+    padding-right: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: #52006A;
+}
+
+#card {
+    border: 3px dashed purple;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    box-shadow: -6px -7px 5px rgb(255, 255, 255), 6px 7px 4px rgb(126, 118, 118);
+}
+
+#heading {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 2.3rem;
+    text-align: center;
+    color: black;
+    background-image: url("head.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5% 2%;
+    /*background-image: linear-gradient(255, 34, 72);*/
+}
+
+.navigation {
+    background-color: #e8eaf6;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 4%;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+#card p {
+    margin: 2px auto;
+}
+
+#card .img {
+    text-align: center;
+    background-clip: inherit;
+    border-radius: 5px 5px 0;
+    color: rgb(46, 1, 1);
+    /*background-image: linear-gradient(to right, rgb(253, 5, 5), rgb(139, 3, 250));*/
+    background-color: #FF5656;
+}
+
+@media screen and (max-width:1000px) {
     #courses {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-        margin: 4%;
-    }
-    
-    h5 {
-        font-size: 1.2rem;
-    }
-    
-    #card p {
-        margin: 2px auto;
-    }
-    
-    #card .img {
-        text-align: center;
-        background-clip: inherit;
-        border-radius: 5px 5px 0;
-        color: white;
-        /*background-image: linear-gradient(to right, rgb(253, 5, 5), rgb(139, 3, 250));*/
-        background-color: rgb(196, 17, 17);
-    }
-    
-    @media screen and (max-width:1000px) {
-        #courses {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    
-    @media screen and (max-width:900px) {
-        #courses {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    #contact {
-        background-color: purple;
-        margin: 0;
-        padding: 2% 7%;
-        display: grid;
-        color: #e8eaf6;
         grid-template-columns: 1fr 1fr;
-        font-size: 1rem;
     }
+}
+
+@media screen and (max-width:900px) {
+    #courses {
+        grid-template-columns: 1fr;
+    }
+}
+
+#contact {
+    background-color: #52006A;
+    margin: 0;
+    padding: 2% 7%;
+    display: grid;
+    color: #e8eaf6;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+}
