@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e8eaf6;
     font-family: 'Lora', serif;
 }
 
@@ -31,10 +30,10 @@ a {
 }
 
 #card {
-    border: 3px dashed purple;
+    border: 2px solid purple;
     border-radius: 5px;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
     box-shadow: -6px -7px 5px rgb(255, 255, 255), 6px 7px 4px rgb(126, 118, 118);
 }
 
@@ -48,6 +47,7 @@ a {
     background-attachment: fixed;
     background-size: cover;
     padding: 5% 2%;
+    margin: 0 auto;
     /*background-image: linear-gradient(255, 34, 72);*/
 }
 
@@ -57,7 +57,7 @@ a {
 }
 
 .navigation {
-    background-color: #e8eaf6;
+    background-color: white;
     position: fixed;
     left: 0px;
     right: 0px;
@@ -68,7 +68,7 @@ a {
 #courses {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 29px;
     margin: 4%;
 }
 
@@ -86,29 +86,36 @@ h5 {
     border-radius: 5px 5px 0;
     color: rgb(46, 1, 1);
     /*background-image: linear-gradient(to right, rgb(253, 5, 5), rgb(139, 3, 250));*/
-    background-color: #FF5656;
+    background-color: #B088F9;
 }
 
-@media screen and (max-width:1000px) {
-    #courses {
-        grid-template-columns: 1fr 1fr;
-    }
+#contact {
+    background-color: #B088F9;
+    margin: 0;
+    padding: 2% 7%;
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    font-size: 1rem;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (min-width:200px) {
     #courses {
         grid-template-columns: 1fr;
     }
 }
 
-#contact {
-    background-color: #52006A;
-    margin: 0;
-    padding: 2% 7%;
-    display: grid;
-    color: #e8eaf6;
-    grid-template-columns: 1fr 1fr;
-    font-size: 1rem;
+@media screen and (min-width:700px) {
+    #courses {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #courses {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 #card p {
@@ -116,5 +123,48 @@ h5 {
 }
 
 #about {
-    padding: 5% 7%;
+    padding: 5% 3%;
+    background-color: #DA9FF9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+#about img {
+    width: 100%;
+}
+
+#about #img {
+    border-radius: 2%;
+}
+
+.img img {
+    float: left;
+    padding: 5% 5%;
+}
+
+#email {
+    display: grid;
+}
+
+#address {
+    display: grid;
+}
+
+nav ul li:hover {
+    background-color: #DA9FF9;
+    color: black;
+}
+
+#card:hover {
+    border-radius: 0%;
+    background-color: #DA9FF9;
+}
+
+
+/*
+colors
+#BEDCFA
+#98AEF8
+#B088F9
+#DA9FF9
+*/
