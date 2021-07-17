@@ -110,8 +110,22 @@ h5 {
     font-size: 1rem;
 }
 
+#contact img {
+    width: 2rem;
+    background-image: linear-gradient(rgb(214, 185, 219), rgb(198, 138, 199), rgb(179, 179, 228));
+}
+
+#contact #email {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-gap: 0;
+}
+
 @media screen and (min-width:200px) {
     #courses {
+        grid-template-columns: 1fr;
+    }
+    #about {
         grid-template-columns: 1fr;
     }
 }
@@ -135,9 +149,9 @@ h5 {
 #about {
     padding: 5% 5%;
     background-color: #B088F9;
-    height: 1000;
     display: grid;
     grid-gap: 20px;
+    color: white;
     grid-template-columns: 0.8fr 1fr;
 }
 
