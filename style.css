@@ -166,14 +166,6 @@ h5 {
     padding: 5% 5%;
 }
 
-#email {
-    display: grid;
-}
-
-#address {
-    display: grid;
-}
-
 nav ul li:hover {
     font-size: larger;
     color: black;
@@ -186,12 +178,17 @@ nav ul li:hover {
     animation-duration: 0.06s;
 }
 
+.icon:hover {
+    color: black;
+}
 
-/*
-colors
-#BEDCFA
-#98AEF8
-#B088F9
-#DA9FF9
+#gallery div {
+    display: inline-block;
+}
 
-A9FF9 */
+#gallery div img {
+    border-radius: 23%;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
