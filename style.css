@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: justify;
     font-family: 'Lora', serif;
 }
 
@@ -20,7 +21,6 @@ ul {
 
 li {
     display: inline;
-    text-align: right;
     padding-right: 2%;
 }
 
@@ -35,6 +35,16 @@ a {
     display: grid;
     grid-template-rows: 1fr 3fr;
     box-shadow: -6px -7px 5px rgb(255, 255, 255), 6px 7px 4px rgb(126, 118, 118);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(50px);
+        transform: scaleX(1.2);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #heading {
@@ -123,10 +133,12 @@ h5 {
 }
 
 #about {
-    padding: 5% 3%;
-    background-color: #DA9FF9;
+    padding: 5% 5%;
+    background-color: #B088F9;
+    height: 1000;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-columns: 0.8fr 1fr;
 }
 
 #about img {
@@ -134,7 +146,7 @@ h5 {
 }
 
 #about #img {
-    border-radius: 2%;
+    border-radius: 5%;
 }
 
 .img img {
@@ -151,13 +163,15 @@ h5 {
 }
 
 nav ul li:hover {
-    background-color: #DA9FF9;
+    font-size: larger;
     color: black;
 }
 
 #card:hover {
     border-radius: 0%;
     background-color: #DA9FF9;
+    animation-name: bounce;
+    animation-duration: 0.06s;
 }
 
 
@@ -167,4 +181,5 @@ colors
 #98AEF8
 #B088F9
 #DA9FF9
-*/
+
+A9FF9 */
