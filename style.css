@@ -66,6 +66,11 @@ a {
     display: inline-block;
 }
 
+#content > h3{
+    text-align: center;
+    font-size: 30px;
+}
+
 .navigation {
     background-color: white;
     position: fixed;
@@ -85,6 +90,10 @@ a {
 h5 {
     font-size: 1.2rem;
 }
+#card{
+
+    cursor: pointer;
+}
 
 #card p {
     margin: 2px auto;
@@ -97,6 +106,10 @@ h5 {
     color: rgb(46, 1, 1);
     /*background-image: linear-gradient(to right, rgb(253, 5, 5), rgb(139, 3, 250));*/
     background-color: #B088F9;
+}
+
+.img img{
+    width: 3em;
 }
 
 #contact {
@@ -191,13 +204,32 @@ nav ul li:hover {
     color: black;
 }
 
-#gallery div {
+.gallery div {
     display: inline-block;
+
 }
 
-#gallery div img {
-    border-radius: 23%;
+.gallery div img {
+    /* border-radius: 23%; */
+    margin: 2rem;
     width: 300px;
     height: 300px;
     display: inline-block;
 }
+
+@media screen and (max-width:700px) {
+    .gallery{
+        text-align: center;
+    };
+}
+
+.icon{
+    /* text-align: center; */
+    margin:0 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
