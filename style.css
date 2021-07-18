@@ -95,6 +95,18 @@ h5 {
 #card p {
     margin: 2px auto;
 }
+#card{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.img img{
+    height: 100px;
+    width: 100px;
+
+}
 
 #card .img {
     text-align: center;
@@ -119,6 +131,10 @@ h5 {
 #contact img {
     width: 1.9rem;
     /*background-image: linear-gradient(rgb(214, 185, 219), rgb(198, 138, 199), rgb(179, 179, 228));*/
+}
+
+#content > h3{
+    text-align: center;
 }
 
 #contact #email {
@@ -230,4 +246,16 @@ nav ul li:hover {
 button {
     border-radius: 3%;
     border: 0px;
+}
+
+.link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.link:hover{
+    color: #ffffff;
+}
+
+.icon{
+    margin:0 1rem;
 }
